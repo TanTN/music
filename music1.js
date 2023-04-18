@@ -26,10 +26,66 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
     {
+      name: "Dancin",
+      singer: "Aaron Smith",
+      path: 
+        "./music/y2mate.com - Aaron Smith  Dancin KRONO Remix  Lyrics.mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
+      name: "Tháng mấy em nhớ anh",
+      singer: "Hà Anh Tuấn",
+      path: 
+        "./music/y2meta.com - [Official Lyric Video] Tháng Mấy Em Nhớ Anh_ __ Hà Anh Tuấn (128 kbps).mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
+      name: "Thú Cuối",
+      singer: "Mr.T Yanbi",
+      path: 
+        "./music/y2meta.com - [OFFICIAL MV] Thu Cuối - Mr.T ft Yanbi & Hằng Bingboong (128 kbps).mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
+      name: "Có Khi",
+      singer: "Hoài Lâm",
+      path: 
+        "./music/y2meta.com - Có Khi _ Hoài Lâm _ Official Lyrics Video (128 kbps).mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
+      name: "Tháng tư là lời nói dối của em",
+      singer: "Hà Anh Tuấn",
+      path: 
+        "./music/WaitingForYou-MONOOnionn-7733882 (1).mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
       name: "Waiting For You",
       singer: "MONO",
       path: 
         "./music/WaitingForYou-MONOOnionn-7733882 (1).mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
+      name: "Nơi Tình Yêu Bắt Đầu",
+      singer: "Bùi Anh Tuấn",
+      path: 
+        "./music/y2meta.com - Nơi Tình Yêu Bắt Đầu _ Bùi Anh Tuấn _ Lyrics Video (128 kbps).mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
+      name: "Willow",
+      singer: "I unknow",
+      path: 
+        "./music/y2mate.com - Willow  Wait A Minute Tiktok RemixLyrics  i think I left my conscience on your front doorstep.mp3",
+      image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
+    },
+    {
+      name: "Anh nên yêu cô ấy",
+      singer: "N Ly",
+      path: 
+        "./music/y2mate.com - Anh Nên Yêu Cô Ấy  N Ly  Lyrics Video.mp3",
       image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
     },
     {
@@ -75,34 +131,7 @@ const app = {
       image:
         "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
     },
-    {
-      name: "Tết Sang",
-      singer: "Nam Em",
-      path: "./music/UpgradeTetSang-HoaKhoiNamEm-4304937.mp3",
-      image:
-        "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
-    },
-    {
-      name: "Tết Sang",
-      singer: "Nam Em",
-      path: "./music/UpgradeTetSang-HoaKhoiNamEm-4304937.mp3",
-      image:
-        "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
-    },
-    {
-      name: "Tết Sang",
-      singer: "Nam Em",
-      path: "./music/UpgradeTetSang-HoaKhoiNamEm-4304937.mp3",
-      image:
-        "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
-    },
-    {
-      name: "Tết Sang",
-      singer: "Nam Em",
-      path: "./music/UpgradeTetSang-HoaKhoiNamEm-4304937.mp3",
-      image:
-        "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
-    },
+    
     ],
     setConfig: function(key,value) {
       this.config[key] = value;
