@@ -1,0 +1,269 @@
+:root {
+    --primary-color: #ec1f55;
+    --text-color: #333;
+    --width-player: 480px;
+  }
+  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.player {
+  position: relative;
+  max-width: var(--width-player);
+  margin: 0 auto;
+  background-image:url('./img/wallhaven-zyxvqy.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.player .icon-pause {
+  display: none;
+}
+
+.player.playing .icon-pause {
+  display: inline-block;
+}
+
+.player.playing .icon-play {
+  display: none;
+}
+
+.dashboard {
+  padding: 16px 16px 14px;
+  background: linear-gradient(45deg , #df350a ,#bbeb0d);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 480px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h4 {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+header h2 {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+/* CD */
+.cd {
+  display: flex;
+  margin: auto;
+  width: 200px;
+}
+
+.cd-thumb {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  background-size: cover;
+  margin: auto;
+}
+
+/* CONTROL */
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px 0 8px 0;
+}
+
+.control .btn {
+  color: #8f4fc8;
+  padding: 18px;
+  font-size: 18px;
+}
+
+.control .btn.active {
+  color: var(--primary-color);
+}
+
+.control .btn-toggle-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.range-Input {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.range-Input-chidren {
+  height: 100px;
+  width: 200%;
+  position: relative;
+
+}
+.range-Input::-webkit-scrollbar {
+  display: none;
+}
+.progress-fix {
+  /* position: relative; */
+  height: 50px;
+  display: flex;
+  align-items: self-end;
+}
+.progress-fix1{
+  display: flex;
+  align-items: self-start;
+  margin-top: 2px;
+  height: 50px;
+}
+.deco {
+  background-color: #e0b3b3c0;
+  margin-right: 1px;
+  width: 10px;
+
+}
+.deco1 {
+  background-color: #caccbc5b;
+  margin-right: 1px;
+  width: 10px;
+  
+}
+
+.deco-color2 {
+  background-color: #ecb37d59;
+}
+.deco-color3 {
+  background-color: #e0a46b59;
+}
+.deco-color {
+  background-color: #ec7709;
+
+}
+.deco-color1 {
+  background-color: #ec770973;
+
+}
+.deco-color4 {
+  background-color: #cecece59;
+}
+.deco-color5 {
+  background-color: #cecece59;
+}
+
+.deco-color6 {
+  background-color: #ec7709;
+  transition: all 0.2s linear;
+
+}
+.deco-color7 {
+  background-color: #ec770973;
+  transition: all 0.2s linear;
+
+}
+.progress {
+  -webkit-appearance: block;
+  height: 70px;
+  background: #ff0101;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  accent-color: #ff9900;
+  position: absolute;
+  top: 15%;
+  right: 207px;
+  left: 0;
+  z-index: 100;
+}
+.progress::-moz-range-progress{
+  background-color: var(--primary-color);
+  height: 1em;
+}
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 6px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* PLAYLIST */
+.playlist {
+  margin-top: 476px;
+  padding: 12px;
+
+
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #a8538c;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.song.active {
+  background-color: var(--primary-color);
+}
+
+.song:active {
+  opacity: 0.8;
+}
+
+.song.active .option,
+.song.active .author,
+.song.active .title {
+  color: #fff;
+}
+
+.song .thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 8px;
+}
+
+.song .body {
+  flex: 1;
+  padding: 0 16px;
+}
+
+.song .title {
+  font-size: 18px;
+  color: #cdbeff;
+}
+
+.song .author {
+  font-size: 12px;
+  color: #cecece;
+}
+
+.playlist .option {
+  padding: 16px 8px;
+  color: #999;
+  font-size: 18px;
+  
+}
