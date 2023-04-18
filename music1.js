@@ -29,13 +29,13 @@ const app = {
       name: "Waiting For You",
       singer: "MONO",
       path: 
-        "/music/WaitingForYou-MONOOnionn-7733882 (1).mp3",
+        "./music/WaitingForYou-MONOOnionn-7733882 (1).mp3",
       image: "https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg"
     },
     {
       name: "Lạc Trôi",
       singer: "Sơn Tùng",
-      path: "/music/LacTroiTripleDRemix-SonTungMTP-5164670.mp3",
+      path: "./music/LacTroiTripleDRemix-SonTungMTP-5164670.mp3",
       image:
         "https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg"
     },
@@ -43,7 +43,7 @@ const app = {
       name: "Đào Nương",
       singer: "Hoàng Vương",
       path:
-        "/music/DaoNuong-HoangVuong-7037330.mp3",
+        "./music/DaoNuong-HoangVuong-7037330.mp3",
       image: "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
     },
     {
