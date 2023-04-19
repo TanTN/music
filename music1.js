@@ -212,7 +212,7 @@ const app = {
             if (audio.duration) {
               
               const progressPercent = Math.floor(audio.currentTime / audio.duration * 200)
-              // progress.value = progressPercent  
+              progress.value = progressPercent  
               _this.indexInput = progressPercent
               decoPlay[progressPercent].classList.add('deco-color')
               decoPlay1[progressPercent].classList.add('deco-color1')
